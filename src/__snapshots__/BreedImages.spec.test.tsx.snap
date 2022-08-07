@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BreedImages /> should send image url correctly when click in image 1`] = `
+<div>
+  <h3
+    class="text-center py-4"
+  >
+     
+    title1
+     
+  </h3>
+  <div
+    class="row container mx-auto"
+  >
+    <div
+      class="card col-sm-12 col-md-6 col-lg-4 mx-auto"
+    >
+      <div
+        class="image"
+        data-bs-target="#exampleModal"
+        data-bs-toggle="modal"
+      >
+        <img
+          alt="title1"
+          class="card-img-top m-1"
+          src="images1.jpg"
+        />
+      </div>
+    </div>
+    <div
+      class="card col-sm-12 col-md-6 col-lg-4 mx-auto"
+    >
+      <div
+        class="image"
+        data-bs-target="#exampleModal"
+        data-bs-toggle="modal"
+      >
+        <img
+          alt="title1"
+          class="card-img-top m-1"
+          src="images2.jpg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    aria-hidden="true"
+    aria-labelledby="exampleModalLabel"
+    class="modal fade"
+    id="exampleModal"
+  >
+    <div
+      class="modal-dialog"
+    >
+      <div
+        class="modal-content"
+      >
+        <div
+          class="modal-header"
+        >
+          <button
+            aria-label="Close"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            type="button"
+          />
+        </div>
+        <div
+          class="modal-body"
+        >
+          <img
+            class="card-img-top"
+            src=""
+          />
+        </div>
+        <div
+          class="modal-footer"
+        >
+          <button
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+            type="button"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
