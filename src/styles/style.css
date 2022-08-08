@@ -1,5 +1,5 @@
 .login{
-    padding-top: 60%;
+    margin-top: 60%;
 }
 
 body{
@@ -43,6 +43,10 @@ body{
     cursor: pointer;
 }
 
+.breed-spinner{
+    margin-top: 50%;
+}
+
 @media(max-width:425px){
     .header-content{
         padding: 0;
@@ -51,20 +55,20 @@ body{
 
 @media(min-width:375px){
     .login{
-        padding-top: 45%;
+        margin-top: 45%;
     }
 }
 
 @media(min-width:425px){
     .login{
-        padding-top: 45%;
+        margin-top: 45%;
     }
 
 }
 
 @media(min-width:768px){
     .login{
-        padding-top: 25%;
+        margin-top: 25%;
     }
 
     .header-content .title{
@@ -78,20 +82,20 @@ body{
     .form-login{
         width: 70%;
     }
+
+    .breed-spinner{
+        margin-top: 20%;
+    }
 }
 
 @media(min-width:1024px){
     .login{
-        padding-top: 15%;
+        margin-top: 15%;
     }
 
     .header{
         height: 70px;
     }
-
-    /* .header button{
-        margin-top: 10px;
-    } */
 
     .form-login{
         width: 50%;

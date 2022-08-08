@@ -10,16 +10,21 @@ const Breed = () => {
     const params = useParams()
     const [breedSelected, setBreedSelected] = useState<BreedModel | undefined>()
     const [error, setError] = useState<boolean>(false)
+    const [spinner, setSpinner] = useState<boolean>(false)
 
     useEffect(() => {
 
+        setSpinner(true)
         setError(false)
         setBreedSelected(undefined)
 
         if(params.name)
-            breedsApi.getByName(params.name).
-            then(x => setBreedSelected(x)).
-            catch((x) => {
+            breedsApi.getByName(params.name)
+            .then((x) => {
+                setSpinner(false)
+                setBreedSelected(x)
+            })
+            .catch((x) => {
                 if(x instanceof BreedNotFound) 
                     navigate('/breeds/chihuahua', {
                         replace: true
@@ -31,7 +36,13 @@ const Breed = () => {
 
     return <>
             {error && <div>Erro inesperado ocorreu.</div>}
-            {breedSelected?.images && <BreedImages images={breedSelected.images} title={breedSelected.name}/>}
+            {spinner &&
+            <div className="text-center breed-spinner">
+                <div className="spinner-border text-primary text-center" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </div>
+            </div>}
+            {breedSelected?.images && !spinner && <BreedImages images={breedSelected.images} title={breedSelected.name}/>}
         </>
 }
 
