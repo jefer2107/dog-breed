@@ -34,7 +34,8 @@ const Login = () => {
                         <span className="input-group-text" id="basic-addon1">@</span>
                         <input onChange={({target}) => setEmail(target.value)} type="email" name="email" className="form-control" />
                     </div>
-                    <button className="btn btn-outline-success">Enviar</button>
+                    {!spinner && <button className="btn btn-outline-success">Entrar</button>}
+                    
                 </div>
                 {!email && triedSubmit && <div className="text-center text-danger py-2">
                     Informe o email

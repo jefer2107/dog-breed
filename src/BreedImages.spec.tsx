@@ -17,12 +17,5 @@ describe('<BreedImages />', () => {
 
   });
 
-  it('should send image url correctly when click in image', () => {
-    const { container } = render(<BreedImages  {...props}/>)
-
-    expect(container).toMatchSnapshot()
-
-    // const selectImage = jest.fn()
-  })
 })
 

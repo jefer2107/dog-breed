@@ -11,7 +11,7 @@ const BreedImages = ({images, title}: BreedProps) => {
         {images?.map((x, i) => {
             return(
                 <div key={i} className="card col-sm-12 col-md-6 col-lg-4 mx-auto">
-                    <div className="image" onClick={() => setImageSelected(x)} data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div className="image" id="image" onClick={() => setImageSelected(x)} data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src={x} className="card-img-top m-1" alt={title} />
                     </div>
                 </div>
