@@ -22,6 +22,7 @@ const Breed = () => {
             breedsApi.getByName(params.name)
             .then((x) => {
                 setSpinner(false)
+                setError(false)
                 setBreedSelected(x)
             })
             .catch((x) => {
