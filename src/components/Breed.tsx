@@ -36,7 +36,7 @@ const Breed = () => {
     }, [params.name])
 
     return <>
-            {error && <div>Erro inesperado ocorreu.</div>}
+            {error && <div className="text-center message-error">Erro inesperado ocorreu.</div>}
             {spinner &&
             <div className="text-center breed-spinner">
                 <div className="spinner-border text-primary text-center" role="status">

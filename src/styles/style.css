@@ -47,6 +47,10 @@ body{
     margin-top: 50%;
 }
 
+.message-error{
+    margin-top: 10%;
+}
+
 @media(max-width:425px){
     .header-content{
         padding: 0;
