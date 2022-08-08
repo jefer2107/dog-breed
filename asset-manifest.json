@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dog-breed/static/css/main.bfa6cabc.css",
-    "main.js": "/dog-breed/static/js/main.541a62aa.js",
+    "main.css": "/dog-breed/static/css/main.6064dfd1.css",
+    "main.js": "/dog-breed/static/js/main.6bfb424e.js",
     "static/js/787.28cb0dcd.chunk.js": "/dog-breed/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/dog-breed/index.html",
-    "main.bfa6cabc.css.map": "/dog-breed/static/css/main.bfa6cabc.css.map",
-    "main.541a62aa.js.map": "/dog-breed/static/js/main.541a62aa.js.map",
+    "main.6064dfd1.css.map": "/dog-breed/static/css/main.6064dfd1.css.map",
+    "main.6bfb424e.js.map": "/dog-breed/static/js/main.6bfb424e.js.map",
     "787.28cb0dcd.chunk.js.map": "/dog-breed/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfa6cabc.css",
-    "static/js/main.541a62aa.js"
+    "static/css/main.6064dfd1.css",
+    "static/js/main.6bfb424e.js"
   ]
 }
