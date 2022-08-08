@@ -6,6 +6,7 @@ const Login = () => {
     const navigate = useNavigate()
     const [email, setEmail] = useState<string>('')
     const [triedSubmit, setTriedSubmit] = useState(false)
+    const [spinner, setSpinner] = useState<boolean>(false)
 
     const register = (event: any) => {
 
@@ -13,10 +14,15 @@ const Login = () => {
 
         event.preventDefault()
 
-        if(email)
-            authService.auth(email).then(() => {        
+        if(email){
+            setSpinner(true)
+
+            authService.auth(email).then(() => {
+                setSpinner(false)
                 navigate('/')
             })
+        }
+
     }
 
     return (
@@ -33,6 +39,11 @@ const Login = () => {
                 {!email && triedSubmit && <div className="text-center text-danger py-2">
                     Informe o email
                 </div>}
+                {spinner &&<div className="text-center py-4">
+                    <div className="spinner-border text-success text-center" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div>
+                </div> }
             </form>
         </div>
     ) 
